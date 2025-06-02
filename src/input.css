@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+
+@layer base {
+  
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/red-hat-display-v20-latin-regular.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 500;
+  src: url('./fonts/red-hat-display-v20-latin-500.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./fonts/red-hat-display-v20-latin-700.woff2') format('woff2'); 
+}
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Display';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./fonts/red-hat-display-v20-latin-900.woff2') format('woff2'); 
+}
+ html {
+        @apply h-full
+    }
+
+    body {
+        @apply h-full flex flex-col items-center justify-center bg-[#DFE7FE] bg-[url('./img/bg.svg')] bg-no-repeat bg-top  text-base font-black;
+    }
+
+    main {
+        @apply grow
+    }
+}
+
+@layer utilities {
+  .shadow-custom {
+    box-shadow: 0 20px 20px 0 rgba(56, 42, 225, 0.19);
+  }
+   .shadow-deep-blue {
+    box-shadow: 0 40px 40px -20px rgba(13, 48, 189, 0.15);
+  }
+}
